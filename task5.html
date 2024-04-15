@@ -1,0 +1,56 @@
+ <html>
+  <title> Forms in html </title>
+  <body bgcolor="lightyellow" text="brown">
+   <h1 align="center"> Registration form </h1>
+   <form action="process.php" name="regform" method="post" 
+    enctype="multipart/form-data">
+     <h3> Enter Full Name: 
+	  		<input type="text" name="txtFname" placeholder="Your Full Name"></h3>
+	  <h3> Password:
+	  		<input type="password" name="txtPswd" placeholder="your secret text">
+	  <h3> Retype Password:
+	  	   <input type="password" name="txtRTPswd">
+	  <br/>
+      <h3> Select Gender:
+	  	   &nbsp;  Male:
+	  	   <input type="radio" value="M" name="optGender" checked>
+	  	   &nbsp;  Female:
+	  	   <input type="radio" value="F" name="optGender">
+	  <br/>
+	  <h3> Qualification:
+	  	   &nbsp;  SSLC:
+	  	   <input type="checkbox" value="sslc" name="optQual" checked>
+	  	   &nbsp;  PUC:
+	  	   <input type="checkbox" value="puc" name="optQual">
+ 		   &nbsp; UG
+	  	   <input type="checkbox" value="UG" name="optQual" >
+	  <br/>
+	  <h3> State:
+	  	   <select name="chState">
+	  	   	<option value="KA">Karnataka </option>
+	  	   	<option value="MH">Maharastra </option>
+	  	   	<option value="DL" selected>Delhi </option>
+	  	   </select>
+	  </h3>
+	  <br/>Languages Known
+            <select name="chLang" multiple>
+	  	   	<option value="KA">Kannada </option>
+	  	   	<option value="EN" selected>English </option>
+	  	   	<option value="HI">Hindi </option>
+	  	   </select>
+     <br/>
+     <h3> Address: <textarea cols="45" rows="6"> Address </textarea>
+     <br/>
+         Upload Resume: <input type="file" name="filResume">
+	  <br> 
+	 	   Mobile No : <input type="number" name="txtMobile">
+	 <br>
+			Email: <input type="email" name="txtEmail">
+	 <br>
+	 		Date of Birth: <input type="date" name="txtDOB">
+	 <br>
+        <input type="submit" name="btnSubmit" value="Register">
+	     <input type="reset" name="btnReset" value="Clear">
+	</form>
+   </body>
+   </html>
