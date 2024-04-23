@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Text Color & Background Image Example </title>
+	<style>
+		body 
+		{
+   			background-image: url(floral-bg.jpg);
+   			background-attachment: fixed;
+   			background-position: center;
+   			background-repeat: no-repeat; 
+   			background-size: auto;  /*	background-size: cover; */
+   			background-color: lightgray;
+   			color: darkblue; 
+   			text-align: center;
+   			background-clip: content-box;
+   			border: 5px dotted green; 
+   			height:720px;
+   			margin: 5px 5px;
+		}
+		h2.dotted 
+        {
+            border-style: dotted;
+        }
+
+        h2.dashed 
+        {
+            border-style: dashed;
+        }
+
+        h2.solid 
+        {
+            border-style: solid;
+            border-width: 8px;
+            border-top-style: dotted;
+        }
+
+        h2.double 
+        {
+            border-style: double;
+            width: 50%;
+            text-indent: 100px;
+            border-color: red;
+
+        }
+        h1.all-in-one
+        {
+            border-style: solid dashed dotted double;
+            font-size: 20px;
+            width: 40%;
+            background-color: lightseagreen;
+            border-radius:20px;
+            text-align: center;
+            border-width: 15px;
+        }
+	</style>
+</head>
+<body>
+ <h1> CSS Style defined for Body Background Image, Background Color & Text Color Along with various Styles... </h1>
+ <h2>The border-style Property</h2>
+    
+   <h2 class="dotted">A dotted border.</p>
+
+    <h2 class="dashed">A dashed border.</p>
+
+    <h2 class="solid">A solid border. with border width</p>
+
+    <h2 class="double">A double border.</p>
+
+    <h1 class="all-in-one">A sample text with all-in-one Border effects.</p>
+
+</body>
+</html>
