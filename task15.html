@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+  <h1 align="center"> CSS TABLE AND POSITION</h1>
+  
+  <table border="2" cellpadding="5" cellspacing="5" 
+       align="center" width="40%" height="300">
+         <tr> 
+            <th colspan="2" align="center"> EMPLOYEE BASIC DETAILS </th> </tr>
+         <tr>
+            <th valign="top">Name</th>
+            <th>DOB</th>
+         </tr>
+         <tr>
+            <td>Ramesh Kulkarni</td>
+            <td>12-09-2000</td>
+         </tr>
+         <tr>
+            <td>Suresh Hegde</td>
+            <td>15-08-2001</td>
+         </tr>
+      </table>
+
+<h2>position: static;</h2>
+<div class="static">
+This div element has position: static;
+</div>
+
+<h2>position: relative;</h2>
+<div class="relative">
+This div element has position: relative;
+</div>
+
+<h2>position: fixed;</h2>
+<div class="fixed">
+This div element has position: fixed;
+</div>
+<h2>position: relative</h2>
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+<h2>position: sticky</h2>
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:2000px">
+</div>
+</body>
+</html>
