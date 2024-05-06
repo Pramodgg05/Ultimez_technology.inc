@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String Methods Example</title>
+</head>
+<body bgcolor="gray" text="black">
+  <h1>String Methods Example</h1>
+  <p id="output"></p>
+
+  <script>
+    
+    let str = "jss smi dwrd";
+
+    let charAtIndex0 = str.charAt(0);
+    let charAtIndex7 = str.charAt(7);
+
+    let indexOfWorld = str.indexOf("smi");
+
+    let startsWithjss = str.startsWith("jss");
+    let endsWithdwrd = str.endsWith("dwrd!");
+
+
+    let includessmi = str.includes("smi");
+
+    let uppercaseStr = str.toUpperCase();
+    let lowercaseStr = str.toLowerCase();
+
+    let stringWithWhitespace = "   jss, smi!   ";
+    let trimmedStr = stringWithWhitespace.trim();
+
+    let fruits = "apple,banana,orange";
+    let splitArray = fruits.split(",");
+
+    let replacedString = str.replace("dwrd", "JavaScript");
+
+    let output = document.getElementById("output");
+    output.innerHTML += "Character at index 0: " + charAtIndex0 + "<br>";
+    output.innerHTML += "Character at index 7: " + charAtIndex7 + "<br>";
+    output.innerHTML += "Index of 'world': " + indexOfWorld + "<br>";
+    output.innerHTML += "Starts with 'jss': " + startsWithjss + "<br>";
+    output.innerHTML += "Ends with 'dwrd!': " + endsWithdwrd + "<br>";
+    output.innerHTML += "Includes 'smi': " + includessmi + "<br>";
+    output.innerHTML += "Uppercase: " + uppercaseStr + "<br>";
+    output.innerHTML += "Lowercase: " + lowercaseStr + "<br>";
+    output.innerHTML += "Trimmed string: " + trimmedStr + "<br>";
+    output.innerHTML += "Split array: " + splitArray + "<br>";
+    output.innerHTML += "Replaced string: " + replacedString + "<br>";
+  </script>
+</body>
+</html>
