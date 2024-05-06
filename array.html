@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Methods Example</title>
+</head>
+<body bgcolor="lightyellow" text="black">
+  <h1>example on array methods</h1>
+  <p id="output"></p>
+
+  <script>
+    
+    let numbers = [1, 2, 3, 4, 5];
+
+    let moreNumbers = [6, 7, 8];
+    let combinedArray = numbers.concat(moreNumbers);
+
+    let subsetArray = combinedArray.slice(2, 5);
+
+    let reversedArray = combinedArray.reverse();
+
+    let sortedArray = combinedArray.sort();
+
+    let allGreaterThanZero = numbers.every(num => num > 0);
+
+    let anyGreaterThanFive = numbers.some(num => num > 5);
+
+    let firstGreaterThanTwo = numbers.find(num => num > 2);
+
+    let indexOfFirstGreaterThanTwo = numbers.findIndex(num => num > 2);
+
+    let output = document.getElementById("output");
+    output.innerHTML += "Combined array: " + combinedArray + "<br>";
+    output.innerHTML += "Subset array: " + subsetArray + "<br>";
+    output.innerHTML += "Reversed array: " + reversedArray + "<br>";
+    output.innerHTML += "Sorted array: " + sortedArray + "<br>";
+    output.innerHTML += "All elements greater than zero: " + allGreaterThanZero + "<br>";
+    output.innerHTML += "Any element greater than five: " + anyGreaterThanFive + "<br>";
+    output.innerHTML += "First element greater than two: " + firstGreaterThanTwo + "<br>";
+    output.innerHTML += "Index of first element greater than two: " + indexOfFirstGreaterThanTwo + "<br>";
+  </script>
+</body>
+</html>
